@@ -1,0 +1,96 @@
+body,
+html {
+    font-family: 'Verdana', sans-serif;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.box {
+    background-image: url(../img/man-1.jpg);
+    font-weight: 900;
+    height: 100vh;
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#p1 {
+    font-size: 25px;
+    margin-bottom: 0px;
+    padding-right: 15px;
+}
+
+#p2 {
+    font-size: 30px;
+    margin-bottom: 0px;
+    padding-right: 15px;
+}
+
+
+@media (max-width: 1170px) {
+    .box {
+        height: 70vh;
+        background-image: url(../img/man-2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+        justify-content:flex-start;
+    }
+    
+    #p1 {
+    font-size: 15px;
+    margin-bottom: 0px;
+    padding-left: 15px;
+}
+
+    #p2 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    padding-left: 15px;
+}
+}
+    @media (max-width:992px) {
+        .box {
+        height: 60vh;
+        background-image: url(../img/man-1.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50vh;
+        margin: 0px;
+        padding:0px;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:flex-end;
+        color: black;
+    }
+    
+    #p1 {
+    font-size: 10px;
+    margin-bottom: 5px;
+    margin-top:0px;
+    padding-top:0px;
+    padding-left: 0px;
+}
+
+    #p2 {
+    font-size: 15px;
+    margin-bottom: 0px;
+    margin-top:0px;
+    padding-top:0px;
+    padding-left: 0px;
+}
+}
