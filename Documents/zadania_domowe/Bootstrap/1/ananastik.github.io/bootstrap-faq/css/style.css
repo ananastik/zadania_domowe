@@ -1,0 +1,12 @@
+.btn{
+ color: darkred;
+}
+.btn:hover {
+    color:grey;
+}
+h1{
+    color:grey;
+}
+.card-body{
+    color:grey;
+}
