@@ -22,16 +22,16 @@ $(function () {
             dataType: 'json',
             success: function (resultJSON) {
                 
-                var pierwszyUzytkownik = resultJSON[0];
+                var pierwszyUzytkownik = resultJSON;
                 var division = document.createElement("div");
 
                 $(division).html(`
-                Imie: ${pierwszyUzytkownik.imie}, <br>
-                Nazwisko: ${pierwszyUzytkownik.nazwisko}, <br>
-                Zawod: ${pierwszyUzytkownik.zawod}, <br>
-                Firma: ${pierwszyUzytkownik.firma}, <br>
+                Imie: ${pierwszyUzytkownik.imie} <br>
+                Nazwisko: ${pierwszyUzytkownik.nazwisko} <br>
+                Zawod: ${pierwszyUzytkownik.zawod} <br>
+                Firma: ${pierwszyUzytkownik.firma} <br>
             `);
-                $("body").append(paragraf);
+                $("body").append(division);
 
             },
             onerror: function (msg) {
