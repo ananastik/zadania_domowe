@@ -19,6 +19,7 @@ let cities = ['Warsaw', 'Berlin', 'Paris', 'London', 'New York', 'Tokio', 'Mosco
     for (let i = 0; i < numberOfListItems; ++i) {
         let listItem = document.createElement('li');
          listItem.innerHTML = cities[i];
+         listItem.setAttribute('class','city');
         listElement.appendChild(listItem);
     }
 
